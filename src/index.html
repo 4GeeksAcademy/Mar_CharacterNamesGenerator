@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Characters Genarator</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -13,17 +13,28 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+    <div
+      class="h-100vh container-fluid d-flex align-items-center justify-content-center flex-column"
+    >
+      <!-- Div que contiene todo -->
+      <!-- Header -->
+      <h2 class="header-character">Which Character are you?</h2>
+      <section>
+        <button id="btn-blonoppies" class="custom-button btn btn-info">
+          Blonoppies
+        </button>
+        <button id="btn-hornililoops" class="custom-button btn btn-info">
+          Hornililoops
+        </button>
+      </section>
+      <section id="sect2" class="d-none">
+        <button id="btn-her" class="custom-button btn btn-info">Her</button>
+        <button id="btn-him" class="custom-button btn btn-info">Him</button>
+        <button id="btn-them" class="custom-button btn btn-info">
+          Them
+        </button>
+      </section>
+      <h1 id="result"></h1>
     </div>
   </body>
 </html>
