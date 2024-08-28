@@ -2,3 +2,9 @@
 .h-100vh {
   height: 100vh;
 }
+body {
+  background-color: rgb(9, 60, 245);
+}
+#result {
+  color: white;
+}

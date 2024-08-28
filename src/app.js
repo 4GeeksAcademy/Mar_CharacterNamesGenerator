@@ -18,11 +18,13 @@ window.onload = function() {
     firstselection = "Blonoppies";
     // Background Image
     document.body.style.backgroundImage =
-      "url('src/assets/img/Background.jpg')";
+      "url('src/assets/img/Blonoppies.svg')";
   });
   btnhornililoops.addEventListener("click", event => {
     sect2.classList.remove("d-none");
     firstselection = "Hornililoops";
+    document.body.style.backgroundImage =
+      "url('src/assets/img/Hornililoops.svg')";
   });
   let btnher = document.querySelector("#btn-her");
   let btnhim = document.querySelector("#btn-him");
