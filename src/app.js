@@ -28,7 +28,7 @@ window.onload = function() {
   });
   let btnher = document.querySelector("#btn-her");
   let btnhim = document.querySelector("#btn-him");
-  let btnthem = document.querySelector("#btn-them");
+  let btnthey = document.querySelector("#btn-they");
 
   let secondselection = "";
   btnher.addEventListener("click", event => {
@@ -41,7 +41,7 @@ window.onload = function() {
       connectors,
       lastNamesBlonoppies,
       himName,
-      themName,
+      theyName,
       lastNamesHornililoops
     );
   });
@@ -55,12 +55,12 @@ window.onload = function() {
       connectors,
       lastNamesBlonoppies,
       himName,
-      themName,
+      theyName,
       lastNamesHornililoops
     );
   });
-  btnthem.addEventListener("click", event => {
-    secondselection = "Them";
+  btnthey.addEventListener("click", event => {
+    secondselection = "they";
     generateName(
       firstselection,
       secondselection,
@@ -69,7 +69,7 @@ window.onload = function() {
       connectors,
       lastNamesBlonoppies,
       himName,
-      themName,
+      theyName,
       lastNamesHornililoops
     );
   });
@@ -128,7 +128,7 @@ window.onload = function() {
     "Ezekiel",
     "Maxwell"
   ];
-  let themName = [
+  let theyName = [
     "Aria",
     "Kai",
     "Jordan",
@@ -247,7 +247,7 @@ window.onload = function() {
     connectors,
     lastNamesBlonoppies,
     himName,
-    themName,
+    theyName,
     lastNamesHornililoops
   ) {
     if (firstselection === "Blonoppies") {
@@ -272,9 +272,9 @@ window.onload = function() {
             Math.floor(Math.random() * lastNamesBlonoppies.length)
           ];
       }
-      if (secondselection === "Them") {
+      if (secondselection === "they") {
         resultHeader.innerHTML =
-          themName[Math.floor(Math.random() * themName.length)] +
+          theyName[Math.floor(Math.random() * theyName.length)] +
           " " +
           connectors[Math.floor(Math.random() * connectors.length)] +
           " " +
@@ -304,9 +304,9 @@ window.onload = function() {
             Math.floor(Math.random() * lastNamesHornililoops.length)
           ];
       }
-      if (secondselection === "Them") {
+      if (secondselection === "they") {
         resultHeader.innerHTML =
-          themName[Math.floor(Math.random() * themName.length)] +
+          theyName[Math.floor(Math.random() * theyName.length)] +
           " " +
           connectors[Math.floor(Math.random() * connectors.length)] +
           " " +
