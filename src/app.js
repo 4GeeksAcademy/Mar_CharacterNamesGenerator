@@ -5,6 +5,13 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
+const tooltipTriggerList = document.querySelectorAll(
+  '[data-bs-toggle="tooltip"]'
+);
+const tooltipList = [...tooltipTriggerList].map(
+  tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl)
+);
+
 window.onload = function() {
   // bottones header
   let btnBlonoppies = document.querySelector("#btn-blonoppies");
@@ -15,6 +22,9 @@ window.onload = function() {
   btnBlonoppies.addEventListener("click", event => {
     console.log("click detected in Blonoppies");
     sect2.classList.remove("d-none");
+    btnBlonoppies.classList.add("btn-primary");
+    btnBlonoppies.classList.remove("btn-secondary");
+    btnhornililoops.classList.add("btn-secondary");
     firstselection = "Blonoppies";
     // Background Image
     document.body.style.backgroundImage =
@@ -23,6 +33,9 @@ window.onload = function() {
   btnhornililoops.addEventListener("click", event => {
     sect2.classList.remove("d-none");
     firstselection = "Hornililoops";
+    btnBlonoppies.classList.add("btn-secondary");
+    btnhornililoops.classList.add("btn-primary");
+    btnhornililoops.classList.remove("btn-secondary");
     document.body.style.backgroundImage =
       "url('src/assets/img/Hornililoops.svg')";
   });
