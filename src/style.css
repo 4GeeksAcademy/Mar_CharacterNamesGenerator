@@ -8,3 +8,6 @@ body {
 #result {
   color: white;
 }
+.custom-tooltip {
+  --bs-tooltip-bg: red;
+}
