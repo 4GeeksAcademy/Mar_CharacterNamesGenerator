@@ -8,6 +8,24 @@ body {
 #result {
   color: white;
 }
-.custom-tooltip {
-  --bs-tooltip-bg: red;
+
+:root {
+  --tooltip-color: rgb(252, 142, 7);
+}
+
+.custom-tooltip.tooltip > .tooltip-inner {
+  background-color: var(--tooltip-color);
+}
+
+.tooltip.bs-tooltip-right .tooltip-arrow::before {
+  border-right-color: var(--tooltip-color) !important;
+}
+.tooltip.bs-tooltip-left .tooltip-arrow::before {
+  border-left-color: var(--tooltip-color) !important;
+}
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: var(--tooltip-color) !important;
+}
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: var(--tooltip-color) !important;
 }
