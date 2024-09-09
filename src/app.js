@@ -1,5 +1,5 @@
 /* eslint-disable */
-import "bootstrap";
+import { Tooltip } from "bootstrap";
 import "./style.css";
 
 import "./assets/img/rigo-baby.jpg";
@@ -9,7 +9,7 @@ const tooltipTriggerList = document.querySelectorAll(
   '[data-bs-toggle="tooltip"]'
 );
 const tooltipList = [...tooltipTriggerList].map(
-  tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl)
+  tooltipTriggerEl => new Tooltip(tooltipTriggerEl)
 );
 
 window.onload = function() {
